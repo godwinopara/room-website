@@ -31,9 +31,10 @@ header {
 .slide1,
 .slide2,
 .slide3 {
+	position: relative;
 	min-height: 70vh;
 	background-size: cover;
-	background-position: center;
+	background-position: right;
 	background-repeat: no-repeat;
 }
 
@@ -95,7 +96,7 @@ nav {
 		padding-top: 0;
 
 		li + li {
-			margin-left: 2rem;
+			margin-left: 1rem;
 		}
 
 		h2 {
@@ -113,15 +114,15 @@ nav {
 	}
 }
 
-.slider-btn {
+.slider-btn1 {
 	position: absolute;
-	top: 61%;
+	bottom: -5px;
 	right: 0;
 	cursor: pointer;
 
 	img {
 		background: $black;
-		padding: 1rem 1.5rem;
+		padding: 1.3rem 1.6rem;
 	}
 
 	img:hover {

@@ -24,9 +24,10 @@ header {
 .slide1,
 .slide2,
 .slide3 {
+  position: relative;
   min-height: 70vh;
   background-size: cover;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat; }
 
 .card-details {
@@ -68,7 +69,7 @@ nav .nav-wrapper {
     justify-content: space-between;
     padding-top: 0; }
     .close .nav-wrapper li + li {
-      margin-left: 2rem; }
+      margin-left: 1rem; }
     .close .nav-wrapper h2 {
       display: none; }
     .close .nav-wrapper ul {
@@ -77,13 +78,13 @@ nav .nav-wrapper {
     .close .nav-wrapper .hamburger-close {
       display: block; }
 
-.slider-btn {
+.slider-btn1 {
   position: absolute;
-  top: 61%;
+  bottom: -5px;
   right: 0;
   cursor: pointer; }
-  .slider-btn img {
+  .slider-btn1 img {
     background: black;
-    padding: 1rem 1.5rem; }
-  .slider-btn img:hover {
+    padding: 1.3rem 1.6rem; }
+  .slider-btn1 img:hover {
     background: #454545; }

@@ -3,13 +3,13 @@ import hamburgerClose from "../images/icon-close.svg";
 import hamburgerOpen from "../images/icon-hamburger.svg";
 
 const NavBar = () => {
-	function handleOpenClick(e) {
+	function handleOpenClick() {
 		const ele = document.querySelector(".hamburger-open");
 		const nav = document.querySelector(ele.dataset.open);
 		nav.classList.add("close");
 	}
 
-	function handleCloseClick(e) {
+	function handleCloseClick() {
 		const ele = document.querySelector(".hamburger-open");
 		const nav = document.querySelector(ele.dataset.open);
 		nav.classList.remove("close");
