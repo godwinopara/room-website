@@ -1,0 +1,89 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  min-height: 600px; }
+
+.container {
+  width: 90%;
+  margin: 0 auto; }
+
+.slide1 {
+  background: url("/src/images/mobile-image-hero-1.jpg"); }
+
+.slide2 {
+  background: url("/src/images/mobile-image-hero-2.jpg"); }
+
+.slide3 {
+  background: url("/src/images/mobile-image-hero-3.jpg"); }
+
+.slide1,
+.slide2,
+.slide3 {
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.card-details {
+  margin: 3rem auto; }
+  .card-details h1 {
+    margin-bottom: 1rem; }
+  .card-details p {
+    margin-bottom: 2rem; }
+  .card-details a {
+    text-decoration: none;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: #454545; }
+  .card-details img {
+    margin-left: 0.5rem; }
+
+nav .nav-wrapper {
+  display: flex;
+  padding-top: 1rem; }
+  nav .nav-wrapper ul {
+    display: none; }
+  nav .nav-wrapper .hamburger-close {
+    display: none; }
+  nav .nav-wrapper .nav-title {
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+  nav .nav-wrapper .hamburger-open {
+    display: flex;
+    align-items: center; }
+
+.close {
+  background: white;
+  padding: 2rem 0;
+  color: black; }
+  .close .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0; }
+    .close .nav-wrapper li + li {
+      margin-left: 2rem; }
+    .close .nav-wrapper h2 {
+      display: none; }
+    .close .nav-wrapper ul {
+      display: flex;
+      list-style-type: none; }
+    .close .nav-wrapper .hamburger-close {
+      display: block; }
+
+.slider-btn {
+  position: absolute;
+  top: 61%;
+  right: 0;
+  cursor: pointer; }
+  .slider-btn img {
+    background: black;
+    padding: 1rem 1.5rem; }
+  .slider-btn img:hover {
+    background: #454545; }
