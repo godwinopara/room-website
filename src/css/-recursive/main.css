@@ -65,6 +65,8 @@ li {
     text-decoration: none;
     letter-spacing: 10px;
     text-transform: uppercase; }
+  .card-details a:hover {
+    opacity: 0.5; }
   .card-details img {
     margin-left: 0.5rem; }
 
@@ -73,6 +75,10 @@ nav .nav-wrapper {
   padding-top: 1rem; }
   nav .nav-wrapper ul {
     display: none; }
+    nav .nav-wrapper ul li {
+      cursor: pointer; }
+    nav .nav-wrapper ul li:hover {
+      opacity: 0.7; }
   nav .nav-wrapper .hamburger-close {
     display: none; }
   nav .nav-wrapper .hamburger-open {
@@ -82,7 +88,8 @@ nav .nav-wrapper {
     color: white;
     width: 100%;
     margin: 0 auto;
-    text-align: center; }
+    text-align: center;
+    font-size: 1rem; }
 
 .close {
   background: white;
@@ -101,6 +108,8 @@ nav .nav-wrapper {
       list-style-type: none; }
     .close .nav-wrapper .hamburger-close {
       display: block; }
+    .close .nav-wrapper .hamburger-close {
+      width: 50%; }
 
 .slider-btn1 {
   position: absolute;
@@ -137,7 +146,10 @@ nav .nav-wrapper {
         margin-left: 2rem; }
       nav .nav-wrapper .nav-links li {
         color: white;
-        align-self: center; }
+        align-self: center;
+        position: relative; }
+      nav .nav-wrapper .nav-links li:hover::before {
+        display: block; }
     nav .nav-wrapper .hamburger-close {
       display: none; }
     nav .nav-wrapper .hamburger-open {
@@ -149,7 +161,16 @@ nav .nav-wrapper {
         font-size: 1.9rem; }
     nav .nav-wrapper .nav-links {
       width: 75%;
-      align-self: center; } }
+      align-self: center; }
+  li::before {
+    content: "";
+    height: 3px;
+    width: 15px;
+    background-color: white;
+    position: absolute;
+    bottom: -5px;
+    left: 12px;
+    display: none; } }
 
 @media screen and (min-width: 1000px) {
   .card-container {
