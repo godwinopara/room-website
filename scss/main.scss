@@ -1,3 +1,13 @@
+/**********************************************
+************ GENERAL STYLE **************** */
+
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
+
+$black: hsl(0, 0%, 0%);
+$white: hsl(0, 0%, 100%);
+$very-dark-gray: hsl(0, 0%, 27%);
+$dark-gray: hsl(0, 0%, 63%);
+
 *,
 *::after,
 *::before {
@@ -6,19 +16,44 @@
 	box-sizing: border-box;
 }
 
-$black: hsl(0, 0%, 0%);
-$white: hsl(0, 0%, 100%);
-$very-dark-gray: hsl(0, 0%, 27%);
-$dark-gray: hsl(0, 0%, 63%);
+body {
+	font-family: "Spartan", sans-serif;
+	font-size: 13px;
+}
 
-header {
-	min-height: 600px;
+p {
+	line-height: 1.6;
+	color: $very-dark-gray;
+	font-size: 0.8rem;
+}
+
+a {
+	color: $black;
+}
+
+h2,
+h1 {
+	font-weight: 700;
+}
+
+img {
+	max-width: 100%;
 }
 
 .container {
 	width: 90%;
 	margin: 0 auto;
 }
+
+/* ******************************************** */
+
+/* ***************************************************
+************ HERO SECTION STYLES ******************** */
+
+header {
+	min-height: 600px;
+}
+
 .slide1 {
 	background: url("/src/images/mobile-image-hero-1.jpg");
 }
@@ -32,14 +67,15 @@ header {
 .slide2,
 .slide3 {
 	position: relative;
-	min-height: 70vh;
+	min-height: 80vh;
 	background-size: cover;
-	background-position: right;
+	background-position: center;
 	background-repeat: no-repeat;
 }
 
 .card-details {
 	margin: 3rem auto;
+	position: relative;
 
 	h1 {
 		margin-bottom: 1rem;
@@ -53,7 +89,6 @@ header {
 		text-decoration: none;
 		letter-spacing: 10px;
 		text-transform: uppercase;
-		color: $very-dark-gray;
 	}
 
 	img {
@@ -127,5 +162,100 @@ nav {
 
 	img:hover {
 		background: $very-dark-gray;
+	}
+}
+
+/* ***************************************
+************* HERO SECTION MEDIA QUERY *****
+*********************************************/
+@media screen and (min-width: 600px) {
+	.slide1 {
+		background: url("/src/images/desktop-image-hero-1.jpg");
+	}
+	.slide2 {
+		background: url("/src/images/desktop-image-hero-2.jpg");
+	}
+	.slide3 {
+		background: url("/src/images/desktop-image-hero-3.jpg");
+	}
+
+	.slide1,
+	.slide2,
+	.slide3 {
+		min-height: 80vh;
+		background-position: top;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.card-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.card-details {
+			width: 40%;
+		}
+
+		#hero-img {
+			width: 55%;
+		}
+	}
+
+	.slider-btn1 {
+		position: absolute;
+		bottom: -5px;
+		right: -130px;
+		cursor: pointer;
+
+		img {
+			background: $black;
+			padding: 1.3rem 1.6rem;
+		}
+
+		img:hover {
+			background: $very-dark-gray;
+		}
+	}
+}
+
+/* ******************************************
+*********** ABOUT SECTION STYLES ************ */
+.about-wrapper {
+	div + div {
+		margin-top: 2rem;
+	}
+
+	h2 {
+		margin-bottom: 1rem;
+		letter-spacing: 2px;
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.about-wrapper {
+		display: flex;
+		justify-content: space-between;
+
+		img {
+			height: 100%;
+		}
+
+		div + div {
+			margin: 0;
+		}
+
+		.about-img1,
+		.about-img2 {
+			width: 30%;
+		}
+		.about-content {
+			width: 35%;
+			padding: 1.5rem 1rem;
+		}
 	}
 }

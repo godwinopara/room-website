@@ -8,7 +8,7 @@ import nextBtn from "../images/icon-angle-right.svg";
 const HeroImageSlide = (props) => {
 	return (
 		<div className="card-container">
-			<div className={props.card.classname}>
+			<div id="hero-img" className={props.card.classname}>
 				<NavBar />
 				<div className="slider-btn1">
 					<img
@@ -24,17 +24,9 @@ const HeroImageSlide = (props) => {
 				<h1>{props.card.title}</h1>
 				<p>{props.card.description}</p>
 				<a href="/shop">
-					Shop Now <img src={arrowIcon} alt="arrowicon" />
+					Shop Now
+					<img src={arrowIcon} alt="arrowicon" />
 				</a>
-				<div className="slider-btn2">
-					<img
-						onClick={props.handleSlideLeft}
-						src={previousBtn}
-						alt="slider button"
-						className="angle-left"
-					/>
-					<img onClick={props.handleSlideRight} src={nextBtn} alt="slider button" />
-				</div>
 			</div>
 		</div>
 	);

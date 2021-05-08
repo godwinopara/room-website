@@ -1,8 +1,14 @@
 import React from "react";
 import HeroPage from "./Components/HeroPage";
+import About from "./About";
 
 const App = () => {
-	return <HeroPage />;
+	return (
+		<>
+			<HeroPage />
+			<About />
+		</>
+	);
 };
 
 export default App;
