@@ -39,6 +39,9 @@ h1 {
 img {
 	max-width: 100%;
 }
+li {
+	list-style: none;
+}
 
 .container {
 	width: 90%;
@@ -49,10 +52,6 @@ img {
 
 /* ***************************************************
 ************ HERO SECTION STYLES ******************** */
-
-header {
-	min-height: 600px;
-}
 
 .slide1 {
 	background: url("/src/images/mobile-image-hero-1.jpg");
@@ -75,7 +74,6 @@ header {
 
 .card-details {
 	margin: 3rem auto;
-	position: relative;
 
 	h1 {
 		margin-bottom: 1rem;
@@ -107,15 +105,16 @@ nav {
 			display: none;
 		}
 
+		.hamburger-open {
+			display: flex;
+			align-items: center;
+		}
+
 		.nav-title {
 			color: $white;
 			width: 100%;
 			margin: 0 auto;
 			text-align: center;
-		}
-		.hamburger-open {
-			display: flex;
-			align-items: center;
 		}
 	}
 }
@@ -185,6 +184,45 @@ nav {
 		min-height: 80vh;
 		background-position: top;
 	}
+
+	nav {
+		.nav-wrapper {
+			display: flex;
+			align-items: center;
+
+			.nav-links {
+				display: flex;
+
+				li + li {
+					margin-left: 2rem;
+				}
+				li {
+					color: $white;
+					align-self: center;
+				}
+			}
+			.hamburger-close {
+				display: none;
+			}
+
+			.hamburger-open {
+				display: none;
+			}
+
+			.nav-title {
+				text-align: left;
+				width: 25%;
+
+				h2 {
+					font-size: 1.9rem;
+				}
+			}
+			.nav-links {
+				width: 75%;
+				align-self: center;
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 1000px) {
@@ -195,6 +233,10 @@ nav {
 
 		.card-details {
 			width: 40%;
+
+			.card-details-wrapper {
+				padding: 2rem;
+			}
 		}
 
 		#hero-img {
@@ -256,6 +298,15 @@ nav {
 		.about-content {
 			width: 35%;
 			padding: 1.5rem 1rem;
+		}
+
+		.about-content {
+			padding: 2rem;
+			align-self: center;
+		}
+
+		h2 {
+			font-size: 1rem;
 		}
 	}
 }

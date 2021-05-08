@@ -27,7 +27,7 @@ const NavBar = () => {
 				<div className="nav-title">
 					<h2>room</h2>
 				</div>
-				<ul>
+				<ul className="nav-links">
 					<li>Home</li>
 					<li>Shop</li>
 					<li>About</li>

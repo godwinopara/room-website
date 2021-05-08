@@ -21,12 +21,14 @@ const HeroImageSlide = (props) => {
 				</div>
 			</div>
 			<div className="card-details container">
-				<h1>{props.card.title}</h1>
-				<p>{props.card.description}</p>
-				<a href="/shop">
-					Shop Now
-					<img src={arrowIcon} alt="arrowicon" />
-				</a>
+				<div className="card-details-wrapper">
+					<h1>{props.card.title}</h1>
+					<p>{props.card.description}</p>
+					<a href="/shop">
+						Shop Now
+						<img src={arrowIcon} alt="arrowicon" />
+					</a>
+				</div>
 			</div>
 		</div>
 	);
