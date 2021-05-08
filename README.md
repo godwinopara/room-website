@@ -18,7 +18,7 @@ Users should be able to:
 ![mobile]("/mobile-design.png")
 
 ### Links
--   Live Site URL: [Live Demo](https://room-website-sage.vercel.app/)
+- [Live Demo](https://room-website-sage.vercel.app/)
 
 ## My process
 
