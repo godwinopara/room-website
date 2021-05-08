@@ -35,10 +35,9 @@ Users should be able to:
 ### What I learned
 
 -learnt how to react hook useState
-
--   learnt how to deploy a create-react-app to github with gh-pages
+-learnt how to deploy a create-react-app to github with gh-pages
 
 ## Author
 
--   Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+-   Frontend Mentor - [@godwinopara](https://www.frontendmentor.io/profile/yourusername)
 -   Twitter - [@godwinopara12](https://www.twitter.com/yourusername)
