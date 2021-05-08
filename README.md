@@ -13,9 +13,8 @@ Users should be able to:
 -   Navigate the slider using either their mouse/trackpad
 
 ### Screenshot
-
-![desktop]("/project-desktop.png")
-![mobile]("/mobile-design.png")
+[![project-desktop.png](https://i.postimg.cc/jSCX4zPN/project-desktop.png)](https://postimg.cc/zyZKJHdX)
+[![mobile-design.jpg](https://i.postimg.cc/BbQDQ0CD/mobile-design.jpg)](https://postimg.cc/CBXdm9XL)
 
 ### Links
 - [Live Demo](https://room-website-sage.vercel.app/)
