@@ -53,6 +53,8 @@ li {
 /* ***************************************************
 ************ HERO SECTION STYLES ******************** */
 
+/* *****************************************
+********* HERO(HEADER)  IMAGES FOR MOBILE *********** */
 .slide1 {
 	background: url("/src/images/mobile-image-hero-1.jpg");
 }
@@ -62,6 +64,9 @@ li {
 .slide3 {
 	background: url("/src/images/mobile-image-hero-3.jpg");
 }
+
+/* **********************************************
+******* SET VIEW PORT HEIGHT FOR EACH IMAGE */
 .slide1,
 .slide2,
 .slide3 {
@@ -71,7 +76,11 @@ li {
 	background-position: center;
 	background-repeat: no-repeat;
 }
+/* ************************************************* */
 
+/* **************************************************
+ ******** **************HEADER CONTENT **************************
+ ***************[ THE HEADER TITLE AND PARARGRAPH]********** */
 .card-details {
 	margin: 3rem auto;
 
@@ -97,6 +106,9 @@ li {
 		margin-left: 0.5rem;
 	}
 }
+
+/* *************************************
+************************************** */
 
 nav {
 	.nav-wrapper {
@@ -132,6 +144,9 @@ nav {
 	}
 }
 
+/* ************************************************
+************************************************
+***** NAV BAR STYLE FOR MOBILE LAYOUT ********* */
 .close {
 	background: $white;
 	padding: 2rem 0;
@@ -182,7 +197,7 @@ nav {
 }
 
 /* ***************************************
-************* HERO SECTION MEDIA QUERY *****
+************* HERO [HEADER LAYOUT] SECTION MEDIA QUERY *****
 *********************************************/
 @media screen and (min-width: 600px) {
 	.slide1 {
